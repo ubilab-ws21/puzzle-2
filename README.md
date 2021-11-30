@@ -5,7 +5,7 @@
 - [The Puzzle](#2)
 - [Use Case Scenario](#3)
 - [System Overview](#4)
-- [Project Timeline](#5)
+- [Project Workflow](#5)
 - [Hardware Overview](#6)
 - [References](#7)
 
@@ -25,7 +25,7 @@ There are lots of switches and you need to turn on few of them. One wrong switch
 ## System Overview <a name="4"></a>
 <img src="https://github.com/ubilab-ws21/puzzle-2/blob/main/Documentation/system_overview.jpg" width="650px">
 
-## Project Timeline <a name="5"></a>
+## Project Workflow <a name="5"></a>
 - [x] Figuring the puzzle according to the story
 - [x] Creating a Bill of Materials (BOM)
 - [x] Starting with ESP32 Programming and Basics of MQTT 
