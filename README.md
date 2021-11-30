@@ -20,7 +20,7 @@ The power switches are protected by a tap-tap pattern for which the players have
 There are lots of switches and you need to turn on few of them. One wrong switch can drain out the emergency backup. The order of the switches which needs to be turned on will be coded and be given using RGB LED Strips. You get the right sequence of switches, the server turns on.
 
 ## Use Case Scenario <a name="3"></a>
-<img src="https://github.com/ubilab-ws21/puzzle-2/blob/main/Documentation/use_case_scenario.jpg" height="300px" width="650px">
+<img src="https://github.com/ubilab-ws21/puzzle-2/blob/main/Documentation/use_case_scenario.jpg" height="350px" width="650px">
 
 ## System Overview <a name="4"></a>
 <img src="https://github.com/ubilab-ws21/puzzle-2/blob/main/Documentation/system_overview.jpg" width="650px">
