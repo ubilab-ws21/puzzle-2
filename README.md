@@ -1,7 +1,7 @@
 # Team 2: Lights Will Guide You
 
 ## Contents
-- Story Overview(#1)
+- [Story Overview](#1)
 - The Puzzle(#2)
 - Use Case Scenario(#3)
 - System Overview
