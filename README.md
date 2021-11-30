@@ -2,8 +2,8 @@
 
 ## Contents
 - [Story Overview](#1)
-- The Puzzle(#2)
-- Use Case Scenario(#3)
+- [The Puzzle](#2)
+- [Use Case Scenario](#3)
 - System Overview
 - Project Timeline
 - References
@@ -19,4 +19,4 @@ The power switches are protected by a tap-tap pattern for which the players have
 There are lots of switches and you need to turn on few of them. One wrong switch can drain out the emergency backup. The order of the switches which needs to be turned on will be coded and be given using RGB LED Strips. You get the right sequence of switches, the server turns on.
 
 ## Use Case Scenario<a name="3"></a>
-![Use case scenario]<img src="https://github.com/ubilab-ws21/puzzle-2/blob/main/Documentation/use_case_scenario.jpg">
+[]<img src="https://github.com/ubilab-ws21/puzzle-2/blob/main/Documentation/use_case_scenario.jpg">
