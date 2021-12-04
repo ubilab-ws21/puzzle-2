@@ -30,9 +30,9 @@ There are lots of switches and you need to turn on few of them. One wrong switch
 - [x] Creating a Bill of Materials (BOM)
 - [x] Starting with ESP32 Programming and Basics of MQTT 
 - [x] First tour of Escape Room
-- [x] Checking all components
+- [x] Testing all components
 - [x] Preparing the circuit
-- [x] Program the ESP Board
+- [ ] Program the ESP Board
 - [ ] ...
 - [ ] Testing and Bug Fixing
 - [ ] Final run and presentation
