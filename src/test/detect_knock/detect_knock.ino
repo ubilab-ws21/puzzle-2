@@ -1,5 +1,7 @@
 /*
   Knock Sensor
+  
+  Tested using Arduino UNO
 */
 
 
