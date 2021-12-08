@@ -47,4 +47,4 @@ There are lots of switches and you need to turn on few of them. One wrong switch
 For more details, check [Bill of Materials](https://github.com/ubilab-ws21/puzzle-2/blob/main/Bill%20of%20Materials.xlsx).
 
 ## References <a name="7"></a>
--
+- [Adafruit NeoPixel 5050](https://learn.adafruit.com/adafruit-neopixel-uberguide/arduino-library-use)
