@@ -48,3 +48,4 @@ For more details, check [Bill of Materials](https://github.com/ubilab-ws21/puzzl
 
 ## References <a name="7"></a>
 - [Adafruit NeoPixel 5050](https://learn.adafruit.com/adafruit-neopixel-uberguide/arduino-library-use)
+- [Piezo Knock Sensor](https://www.arduino.cc/en/Tutorial/BuiltInExamples/Knock)
