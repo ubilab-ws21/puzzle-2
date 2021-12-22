@@ -1,4 +1,15 @@
+/* 
+              ESP-32 Wifi Test
+
+  [Blinks internal LED upon successful connection]
+  
+*/
+
+
 #include <WiFi.h>
+
+// Pin of internal LED of the ESP32
+#define LED_PIN 2
 
 // Speed of Serial Communication
 #define SERIAL_COMSPEED 9600
@@ -36,4 +47,13 @@ void setup() {
 }
  
 void loop(){
+  if(WiFi.status() == WL_CONNECTED){
+  delay(500);
+  digitalWrite(LED_PIN,HIGH);
+  delay(500);
+  digitalWrite(LED_PIN,LOW);
+  }
+  else{
+  digitalWrite(LED_PIN, LOW);
+  }
 }
