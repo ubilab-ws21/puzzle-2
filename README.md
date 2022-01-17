@@ -32,9 +32,13 @@ There are lots of switches and you need to turn on few of them. One wrong switch
 - [x] First tour of Escape Room
 - [x] Testing all components
 - [x] Preparing the circuit
-- [ ] Program the ESP Board
-- [ ] ...
+- [x] Program the ESP Board
+- [x] Prepare 3D Model
+- [ ] Print 3D Model
+- [ ] Assembling components 
 - [ ] Testing and Bug Fixing
+- [ ] Prototype Presentation
+- [ ] Final Tweaking and Testing
 - [ ] Final run and presentation
 
 ## Hardware Overview <a name="6"></a>
