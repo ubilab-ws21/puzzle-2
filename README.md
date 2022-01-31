@@ -34,15 +34,15 @@ There are lots of switches and you need to turn on few of them. One wrong switch
 - [x] Preparing the circuit
 - [x] Program the ESP Board
 - [x] Prepare 3D Model
-- [ ] Print 3D Model
-- [ ] Assembling components 
+- [x] Print 3D Model
+- [x] Assembling components 
 - [ ] Testing and Bug Fixing
 - [ ] Prototype Presentation
 - [ ] Final Tweaking and Testing
 - [ ] Final run and presentation
 
 ## Hardware Overview <a name="6"></a>
-- ESP-32 PICO-D4 Microcontroller
+- ESP-32 Microcontroller
 - Servo Motor
 - Piezo Buzzer
 - Toggle Switches
