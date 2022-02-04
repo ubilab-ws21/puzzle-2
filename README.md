@@ -36,8 +36,8 @@ There are lots of switches and you need to turn on few of them. One wrong switch
 - [x] Prepare 3D Model
 - [x] Print 3D Model
 - [x] Assembling components 
-- [ ] Testing and Bug Fixing
-- [ ] Prototype Presentation
+- [x] Testing and Bug Fixing
+- [x] Prototype Presentation
 - [ ] Final Tweaking and Testing
 - [ ] Final run and presentation
 
