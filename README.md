@@ -1,4 +1,4 @@
-# Team 2: Knock It Off
+# Team 2: Knock It Up
 
 ## Contents
 - [Story Overview](#1)
