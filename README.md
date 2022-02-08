@@ -38,7 +38,7 @@ There are lots of switches and you need to turn on few of them. One wrong switch
 - [x] Assembling components 
 - [x] Testing and Bug Fixing
 - [x] Prototype Presentation
-- [ ] Final Tweaking and Testing
+- [x] Final Tweaking and Testing
 - [ ] Final run and presentation
 
 ## Hardware Overview <a name="6"></a>
