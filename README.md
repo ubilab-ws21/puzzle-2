@@ -84,7 +84,6 @@ void loop(){
 }
 ```
 ##### Establishing MQTT Communication <a name="11"></a>
- `git status`
 The puzzle workflow totally depends on succeful interaction betwwen the operator and the arcape. The operator controls whether the puzzle is to be turned  `on` or `off` depending on the progess of the other puzzles. The programs subscribes from the topic `2/esp` and checks whether the trigger is on/off and works accordingly. Once the puzzle is `on`, the program publishes that the puzzle is `active` in the topics, `2/esp` and `game/puzzle2` for the operator and arcape resp. to understand that the puzzle is active. Otherwise the state is retained to `inactive` state.
 
 ###### Communication Format
@@ -104,10 +103,11 @@ where,
 | status  | inactive, active, solved         | Describes the current state of the puzzle |
 | trigger | on, off                          | Contols the behaviour of the puzzle       |
 
-
+More information regarding MQTT server and the communication protocols can be found [here](https://github.com/ubilab-ws21/operator/blob/master/README.md).The JSON messages received by the server was parsed inside the function `decodeMessage()` and the messages sent to the server was created by the function `createJson()`.
 
 
 ## References <a name="12"></a>
 - [Adafruit NeoPixel 5050](https://learn.adafruit.com/adafruit-neopixel-uberguide/arduino-library-use)
 - [Piezo Knock Sensor](https://www.arduino.cc/en/Tutorial/BuiltInExamples/Knock)
 - [0.96" I2C OLED Display](https://randomnerdtutorials.com/guide-for-oled-display-with-arduino/)
+- [A Guide to ArduinoJSON](https://github.com/bblanchon/ArduinoJson)
