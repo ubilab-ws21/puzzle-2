@@ -1,4 +1,4 @@
-# Team 2: Lights Will Guide You
+# Team 2: Knock It Off
 
 ## Contents
 - [Story Overview](#1)
@@ -7,7 +7,8 @@
 - [System Overview](#4)
 - [Project Workflow](#5)
 - [Hardware Overview](#6)
-- [References](#7)
+- [Software Overview](#7)
+- [References](#8)
 
 ## Story Overview <a name="1"></a>
 A Solar strom themed Escape Room where players have to solve puzzles to get out of it. In the year 2032, the world revolving around automation and high-end technology. One fine day, a Solar Storm hits the city and all the servers and digital systems starts to fail there is a power breakdown. The players are stuck inside a server room having limited emergency backup. The goal is to upload the software to the server in order to get things back in place.   
@@ -50,6 +51,8 @@ There are lots of switches and you need to turn on few of them. One wrong switch
 
 For more details, check [Bill of Materials](https://github.com/ubilab-ws21/puzzle-2/blob/main/Bill%20of%20Materials.xlsx).
 
-## References <a name="7"></a>
+## Software Overview <a name="7"></a>
+
+## References <a name="8"></a>
 - [Adafruit NeoPixel 5050](https://learn.adafruit.com/adafruit-neopixel-uberguide/arduino-library-use)
 - [Piezo Knock Sensor](https://www.arduino.cc/en/Tutorial/BuiltInExamples/Knock)
