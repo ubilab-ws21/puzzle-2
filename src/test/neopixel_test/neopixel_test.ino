@@ -15,8 +15,8 @@ Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 
 #define DELAYVAL 500 // Time (in milliseconds) to pause between pixels
 
-#define SSID "TP-Link_703C"   // Wifi SSID
-#define PWD "Freiburg@2020"   // Wifi Password
+#define SSID "ubilab_wifi"   // Wifi SSID
+#define PWD "ohg4xah3oufohreiPe7e"   // Wifi Password
 
 #define NAME "Puzzle_2"  // Host Name
 
