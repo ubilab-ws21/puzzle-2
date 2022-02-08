@@ -61,13 +61,13 @@ For more details, check [Bill of Materials](https://github.com/ubilab-ws21/puzzl
 
 ## Software Overview <a name="7"></a>
 
-#### Testing Individual Modules <a name="8"></a>
+##### Testing Individual Modules <a name="8"></a>
 Firstly, we tested all the components and modules individually for better integration of our project. Each modules were tested with Arduino for understanding the basic functionality and then tested with ESP32 to check the compatibility. The codes for testing can be found [here](https://github.com/ubilab-ws21/puzzle-2/tree/main/src/test)
 
-#### Building the Main Program <a name="9"></a>
+##### Building the Main Program <a name="9"></a>
 Then, we integrated all the modules and modified in a single program to be fired up in the ESP32. The program manages the worflow of the puzzle and maintains proper communication with the MQTT server. It is also programmed in such a way that the ESP32 can receives updates Over-the-air. The main code can be found [here](https://github.com/ubilab-ws21/puzzle-2/tree/main/src/main) 
 
-#### Configuring OTA <a name="10"></a>
+##### Configuring OTA <a name="10"></a>
 In order to receive updates Over-the-air, the below function has been called inside the setup loop. The function sets up the host name and password for the ESP32 in the newtork and updates the ESP32 if there is any update request. Also, remember to include the appropriate header file.
 ```
 #include <ArduinoOTA.h>
@@ -83,7 +83,28 @@ void loop(){
   ArduinoOTA.handle();
 }
 ```
-#### Establishing MQTT Communication <a name="11"></a>
+##### Establishing MQTT Communication <a name="11"></a>
+ `git status`
+The puzzle workflow totally depends on succeful interaction betwwen the operator and the arcape. The operator controls whether the puzzle is to be turned  `on` or `off` depending on the progess of the other puzzles. The programs subscribes from the topic `2/esp` and checks whether the trigger is on/off and works accordingly. Once the puzzle is `on`, the program publishes that the puzzle is `active` in the topics, `2/esp` and `game/puzzle2` for the operator and arcape resp. to understand that the puzzle is active. Otherwise the state is retained to `inactive` state.
+
+###### Communication Format
+All messages exchanged between the server and the client is JSON schema: 
+
+```json
+{
+  "method": "<method>",
+  "state": "<state>",
+  "data": "<data>"
+}
+```
+where,
+
+| Method  | State                            | Description                               |
+| :------ | :------------------------------- | :---------------------------------------- |
+| status  | inactive, active, solved         | Describes the current state of the puzzle |
+| trigger | on, off                          | Contols the behaviour of the puzzle       |
+
+
 
 
 ## References <a name="12"></a>
