@@ -119,8 +119,7 @@ boolean CodeCmp(int a[NUMPIXELS], int b[NUMPIXELS])
 #define OTA_PWD "sss21"      // PWD for OTA
 
 // MQTT Server
-//#define mqtt_server "10.8.166.20"
-#define mqtt_server "earth.informatik.uni-freiburg.de"
+#define mqtt_server "10.8.166.20"
 WiFiClient puzzle_2;
 PubSubClient client(puzzle_2);
 bool retained = true;
