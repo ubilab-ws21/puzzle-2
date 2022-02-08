@@ -1,4 +1,4 @@
-# Team 2: Knock It Up
+# Team 2: Time will guide you!
 
 ## Contents
 - [Story Overview](#1)
