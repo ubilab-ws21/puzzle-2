@@ -103,7 +103,8 @@ where,
 | status  | inactive, active, solved         | Describes the current state of the puzzle |
 | trigger | on, off                          | Contols the behaviour of the puzzle       |
 
-More information regarding MQTT server and the communication protocols can be found [here](https://github.com/ubilab-ws21/operator/blob/master/README.md).The JSON messages received by the server was parsed inside the function `decodeMessage()` and the messages sent to the server was created by the function `createJson()`.
+More information regarding MQTT server and the communication protocols can be found [here](https://github.com/ubilab-ws21/operator/blob/master/README.md).<br/>
+The JSON messages received by the server was parsed inside the function `decodeMessage()` and the messages sent to the server was created by the function `createJson()`.
 
 
 ## References <a name="12"></a>
