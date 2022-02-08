@@ -70,8 +70,8 @@ boolean CodeCmp(int a[NUMPIXELS], int b[NUMPIXELS])
 #define SERIAL_COMSPEED 9600
 
 // Credentials for network SSID and PWD
-#define SSID "TP-Link_703C"
-#define PWD "Freiburg@2020"
+#define SSID "ubilab_wifi"
+#define PWD "ohg4xah3oufohreiPe7e"
 
 // Device can be found on the network using this name
 #define NAME "Puzzle2-ESP1"  //Name of the ESP: 0/1
