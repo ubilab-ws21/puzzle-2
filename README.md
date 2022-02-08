@@ -8,7 +8,11 @@
 - [Project Workflow](#5)
 - [Hardware Overview](#6)
 - [Software Overview](#7)
-- [References](#8)
+  - [Testing Individual Modules](#8)
+  - [Building the Main Program](#9)
+  - [Configuring OTA](#10)
+  - [Establishing MQTT Communication](#11) 
+- [References](#12)
 
 ## Story Overview <a name="1"></a>
 A Solar strom themed Escape Room where players have to solve puzzles to get out of it. In the year 2032, the world revolving around automation and high-end technology. One fine day, a Solar Storm hits the city and all the servers and digital systems starts to fail there is a power breakdown. The players are stuck inside a server room having limited emergency backup. The goal is to upload the software to the server in order to get things back in place.   
@@ -36,7 +40,10 @@ There are lots of switches and you need to turn on few of them. One wrong switch
 - [x] Program the ESP Board
 - [x] Prepare 3D Model
 - [x] Print 3D Model
-- [x] Assembling components 
+- [x] Design the outer casing
+- [x] Assemble the outer casing
+- [x] Solder the circuit in PCB
+- [x] Assembling all components 
 - [x] Testing and Bug Fixing
 - [x] Prototype Presentation
 - [x] Final Tweaking and Testing
@@ -46,6 +53,7 @@ There are lots of switches and you need to turn on few of them. One wrong switch
 - ESP-32 Microcontroller
 - Servo Motor
 - Piezo Buzzer
+- OLED Display
 - Toggle Switches
 - 8x5050 RGB LED Strip
 
@@ -53,6 +61,29 @@ For more details, check [Bill of Materials](https://github.com/ubilab-ws21/puzzl
 
 ## Software Overview <a name="7"></a>
 
-## References <a name="8"></a>
+###### Testing Individual Modules <a name="8"></a>
+Firstly, we tested all the components and modules individually for better integration of our project. Each modules were tested with Arduino for understanding the basic functionality and then tested with ESP32 to check the compatibility. The codes for testing can be found [here](https://github.com/ubilab-ws21/puzzle-2/tree/main/src/test)
+
+###### Building the Main Program <a name="9"></a>
+Then, we integrated all the modules and modified in a single program to be fired up in the ESP32. The program manages the worflow of the puzzle and maintains proper communication with the MQTT server. It is also programmed in such a way that the ESP32 can receives updates Over-the-air. The main code can be found [here](https://github.com/ubilab-ws21/puzzle-2/tree/main/src/main) 
+
+###### Configuring OTA <a name="10"></a>
+In order to receive updates Over-the-air, the below function has been called inside the setup loop. The function sets up the host name and password for the ESP32 in the newtork and updates the ESP32 if there is any update request. Also, remember to include the appropriate header file.
+```
+#include <ArduinoOTA.h>
+
+void setup(){
+  ....
+  ....
+  setupOTA();
+}
+void loop(){
+  ...
+  ...
+  ArduinoOTA.handle();
+}
+```
+## References <a name="12"></a>
 - [Adafruit NeoPixel 5050](https://learn.adafruit.com/adafruit-neopixel-uberguide/arduino-library-use)
 - [Piezo Knock Sensor](https://www.arduino.cc/en/Tutorial/BuiltInExamples/Knock)
+- [0.96" I2C OLED Display](https://randomnerdtutorials.com/guide-for-oled-display-with-arduino/)
