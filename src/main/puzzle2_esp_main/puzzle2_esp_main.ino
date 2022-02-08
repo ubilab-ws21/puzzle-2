@@ -1,6 +1,31 @@
-/* 
-   Puzzle-2 Main Program
-*/
+/*################################################################################# 
+
+*          This is the main program for the ESP32 of our puzzle
+* 
+* There are two puzzle which has to be solved in order to open the server room:
+* [1] Knock-Knock Puzzle  : This puzzle has a piezo element to detect the Knock
+*                           pattern and unleasd the switch panel.
+*                           
+* {2] Switch Panel Puzzle : This puzzle has a series of toggle switches which 
+*                           has to be turned on/off in a specific pattern which
+*                           the player gets by solving the riddle displayed in
+*                           the OLED Display.
+* 
+* When the puzzle is solved, the server room is opened.
+* 
+* MQTT Communication : There is a constant communication with the operator
+*                      and the ARcape for the puzzle to work accordingly.
+*                      
+* The communication is done via various MQTT Topics:
+* [1] 2/esp [start, stop] - control the state of the ESP
+* [2] game/puzzle2 [inactive, active, solved] - displays hints using arcape
+* 
+* Authors:
+* [1] Sougata Hanra
+* [2] Santosh Kumar Prabhulingaiah
+* [3] Shatakshi Sharma
+   
+#################################################################################*/
 
 #include <WiFi.h>
 #include <Wire.h>
