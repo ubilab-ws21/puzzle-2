@@ -91,7 +91,7 @@ void loop(){
 }
 ```
 ##### Establishing MQTT Communication <a name="13"></a>
-The puzzle workflow totally depends on succeful interaction betwwen the operator and the arcape. The operator controls whether the puzzle is to be turned  `on` or `off` depending on the progess of the other puzzles. The programs subscribes from the topic `2/esp` and checks whether the trigger is on/off and works accordingly. Once the puzzle is `on`, the program publishes that the puzzle is `active` in the topics, `2/esp` and `game/puzzle2` for the operator and arcape resp. to understand that the puzzle is active. Otherwise the state is retained to `inactive` state.
+The puzzle workflow totally depends on successful interaction between the operator and the arcape. The operator controls whether the puzzle is to be turned  `on` or `off` depending on the progess of the other puzzles. The programs subscribes from the topic `2/esp` and checks whether the trigger is on/off and works accordingly. Once the puzzle is `on`, the program publishes that the puzzle is `active` in the topics, `2/esp` and `game/puzzle2` for the operator and arcape resp. to understand that the puzzle is active. Otherwise the state is retained to `inactive` state.
 
 ###### Communication Format
 All messages exchanged between the server and the client is JSON schema: 
