@@ -244,7 +244,6 @@ void setup() {
   *********************/
   do
   {
-    Serial.println("In while");
     randNo = random(0,5);
     newWord = words[randNo];
     for(int k=0; k<NUMPIXELS; k++)
@@ -299,7 +298,6 @@ void loop() {
   #endif
 
   while(puzzleStart && !puzzleSolved){
-    //Serial.println("Started");
     /*********************
        Piezo Sensor
     *********************/
