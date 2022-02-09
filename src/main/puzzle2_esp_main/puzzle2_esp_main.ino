@@ -118,12 +118,12 @@ bool puzzleSolved=false;
 int randNo, bitCode;
 char *newWord; 
 char *words[] = {"eeltcric","nteowrks","magnteci","paritcel","dissaetr","collsape"};
-int bitCodes[6][NUMPIXELS] = {{0,1,1,1,1,0,0,0},
-                              {0,1,1,1,1,0,0,0},
-                              {0,0,0,0,1,1,1,1},
-                              {0,0,0,1,1,0,1,1},
-                              {0,0,0,1,1,1,1,0},
-                              {0,0,0,0,1,1,1,0}};
+int bitCodes[6][NUMPIXELS] = {{1,0,0,0,0,1,1,1},
+                              {1,0,0,0,0,1,1,1},
+                              {1,1,1,1,0,0,0,0},
+                              {1,1,1,0,0,1,0,0},
+                              {1,1,1,0,0,0,0,1},
+                              {1,1,1,1,0,0,0,1}};
 int code[NUMPIXELS] = {0,0,0,0,0,0,0,0};
 int currCode[NUMPIXELS] = {0,0,0,0,0,0,0,0};
 
