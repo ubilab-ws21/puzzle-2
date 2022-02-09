@@ -66,15 +66,15 @@ There are lots of switches and you need to turn on few of them. One wrong switch
 For more details, check [Bill of Materials](https://github.com/ubilab-ws21/puzzle-2/tree/main/docs/BOM).
 
 ##### The Box <a name="8"></a>
-The outer casing and the servo hinge was designed using 3D Modelling. The model files can be found [here](https://github.com/ubilab-ws21/puzzle-2/tree/main/design)
+The outer casing and the servo hinge was designed using 3D Modelling. The model files can be found [here](https://github.com/ubilab-ws21/puzzle-2/tree/main/design).
 
 ## Software Overview <a name="9"></a>
 
 ##### Testing Individual Modules <a name="10"></a>
-Firstly, we tested all the components and modules individually for better integration of our project. Each modules were tested with Arduino for understanding the basic functionality and then tested with ESP32 to check the compatibility. The codes for testing can be found [here](https://github.com/ubilab-ws21/puzzle-2/tree/main/src/test)
+Firstly, we tested all the components and modules individually for better integration of our project. Each modules were tested with Arduino for understanding the basic functionality and then tested with ESP32 to check the compatibility. The codes for testing can be found [here](https://github.com/ubilab-ws21/puzzle-2/tree/main/src/test).
 
 ##### Building the Main Program <a name="11"></a>
-Then, we integrated all the modules and modified in a single program to be fired up in the ESP32. The program manages the worflow of the puzzle and maintains proper communication with the MQTT server. It is also programmed in such a way that the ESP32 can receives updates Over-the-air. The main code can be found [here](https://github.com/ubilab-ws21/puzzle-2/tree/main/src/main) 
+Then, we integrated all the modules and modified in a single program to be fired up in the ESP32. The program manages the worflow of the puzzle and maintains proper communication with the MQTT server. It is also programmed in such a way that the ESP32 can receives updates Over-the-air. The main code can be found [here](https://github.com/ubilab-ws21/puzzle-2/tree/main/src/main). 
 
 ##### Configuring OTA <a name="12"></a>
 In order to receive updates Over-the-air, the below function has been called inside the setup loop. The function sets up the host name and password for the ESP32 in the newtork and updates the ESP32 if there is any update request. Also, remember to include the appropriate header file.
