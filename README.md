@@ -47,7 +47,7 @@ The power switches are protected by a tap-tap pattern for which the players have
 - [x] Testing and Bug Fixing
 - [x] Prototype Presentation
 - [x] Final Tweaking and Testing
-- [ ] Final run and presentation
+- [x] Final run and presentation
 
 ## Hardware Overview <a name="6"></a>
 
